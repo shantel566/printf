@@ -2,13 +2,18 @@
 #include <unistd.h>
 
 /**
+<<<<<<< HEAD
  * print_digit - print integers.
+=======
+ * print_char - print char
+>>>>>>> a798b0277799c4bf16c4a3cb18f4463db2104b09
  *
  * @args: argument.
  *
  * Return: count of chars.
  */
 
+<<<<<<< HEAD
 int print_digit(va_list args)
 {
 	int decimal = 1;
@@ -39,4 +44,13 @@ int print_digit(va_list args)
 	}
 
 	return (count_fun);
+=======
+int print_char(va_list args)
+{
+	char c = va_arg(args, int);
+
+	_putchar(c);
+
+	return (1);
+>>>>>>> a798b0277799c4bf16c4a3cb18f4463db2104b09
 }
